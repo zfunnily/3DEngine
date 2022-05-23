@@ -1,0 +1,14 @@
+cmake_minimum_required (VERSION 3.2)
+project (ECore)
+SET(PROJECT_NAME ECore)
+
+# set(CMAKE_DEBUG_POSTFIX "_d")
+# set(CMAKE_RELEASE_POSTFIX "_r")
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${PROJECT_SOURCE_DIR}/../lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE ${PROJECT_SOURCE_DIR}/../lib)
+
+include_directories(${PROJECT_SOURCE_DIR}/include)
+aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_LIST)
+
+add_library(${PROJECT_NAME} STATIC ${SRC_LIST})

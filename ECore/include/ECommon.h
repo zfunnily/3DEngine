@@ -1,4 +1,5 @@
 #pragma once
+#include <VSCustomNativeHeapEtwProvider.h>
 #include <cmath>
 #include <algorithm>
 #include <cassert>
@@ -7,6 +8,7 @@
 #include <list>
 #include <deque>
 #include <iostream>
+#include <memory>
 
 #include "E3DHead.h"
 
